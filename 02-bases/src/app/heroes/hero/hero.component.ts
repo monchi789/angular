@@ -20,12 +20,21 @@ export class HeroComponent {
   }
 
   changeHero(): void {
-    this.name = 'spiderman'
-
-    }
+    this.name = 'spiderman';
+  }
 
   changeAge(): void {
     this.age = 21;
+  }
+
+  resetForm(): void {
+    // this.name = 'ironman'
+    this.age = 45;
+
+    document.querySelectorAll('h1')!.forEach( element => {
+      element.innerHTML = '<h1>Desde Angular</h1>';
+    });
+
   }
 
 }
